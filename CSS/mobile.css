@@ -126,7 +126,8 @@
 
     /******** SKILLS SECTION ********/
     #skills .skills-section,
-    #projects .projects-section {
+    #projects .projects-section,
+    #experience .experience-section {
         padding: 5rem 0 3.5rem;
     }
 
@@ -135,17 +136,26 @@
     #skills .skills-section .web-development,
     #projects .projects-section .toDoApp,
     #projects .projects-section .superCars,
-    #projects .projects-section .luckGame {
+    #projects .projects-section .luckGame,
+    #experience .experience-section .tekion,
+    #experience .experience-section .sapient {
         grid: unset;
         text-align: center;
     }
 
     #skills .skills-section .designing,
-    #skills .skills-section .programming {
+    #skills .skills-section .programming ,
+    #skills .skills-section .web-development,
+    #projects .projects-section .toDoApp,
+    #projects .projects-section .superCars,
+    #projects .projects-section .luckGame,
+    #experience .experience-section .tekion{
         margin-bottom: 2rem;
     }
 
-    #skills .skills-section>h1
+    #skills .skills-section>h1,
+    #projects .projects-section>h1,
+    #experience .experience-section>h1
      {
         font-size: 2.5rem;
         margin: 2rem 0 3.5rem;
@@ -164,7 +174,9 @@
     .web-development-image,
     .toDoApp-image,
     .superCars-image,
-    .luckGame-image {
+    .luckGame-image,
+    .tekion-image,
+     .sapient-image{
         width: 160px;
         margin: auto;
         margin-bottom: -2rem;
