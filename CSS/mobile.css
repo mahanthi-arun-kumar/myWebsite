@@ -179,7 +179,7 @@
      .sapient-image{
         width: 160px;
         margin: auto;
-        margin-bottom: -2rem;
+        /* margin-bottom: -2rem; */
     }
 
     #skills .skills-section h2,
