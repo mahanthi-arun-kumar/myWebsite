@@ -1,0 +1,340 @@
+/*****************************ALL LATEST FONT*****************************/
+/*
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Comfortaa', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Sacramento', cursive;
+*/
+
+/************************IMPORTANT VARIABLES*************************/
+:root {
+    --primary-color: #10723E;
+    --secondary-color: #235952;
+    --dark-color: #001008;
+    --ligth-color: #DDEFF5;
+}
+
+/************************DEFAULT CSS RESET*************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* ul a.active
+{
+    color: red;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    font-family: 'Comfortaa', cursive;
+}
+
+/* img {
+    width: 100%;
+} */
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/************************ UTILITY CLASSES *************************/
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+/************************ FULL PAGE SECTION *************************/
+/******** NAVIGATION BAR ********/
+#landing {
+    /* height: 100vh; */
+    background-color: #DDEFF5;
+}
+
+#landing .navbar {
+    margin: auto;
+    padding: 1.75rem 0;
+}
+
+#landing .navbar .div-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #landing .navbar .div-row .logo-div {
+    width: 30%;
+} */
+
+#landing .navbar .div-row .logo-div img {
+    width: 70px;
+}
+
+/* #landing .navbar .div-row .link-bar {
+    width: 60%;
+} */
+
+#landing .navbar .div-row .link-bar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#landing .navbar .div-row .link-bar ul li {
+    margin-left: 2.2rem;
+}
+
+#landing .navbar .div-row .link-bar ul a {
+    font-size: 1.2rem;
+    transition: all .3s ease-in-out;
+}
+
+#landing .navbar .div-row .link-bar ul a:hover {
+    color: var(--dark-color);
+}
+
+/******** SHOWCASE ********/
+#showcase {
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#showcase .container {
+    position: relative;
+}
+
+#showcase .container>.top-cloud,
+#showcase .container>.bottom-cloud {
+    width: 145px;
+    position: absolute;
+}
+
+#showcase .container>.top-cloud {
+    top: 3.5rem;
+    right: -13rem;
+}
+
+#showcase .container>.bottom-cloud {
+    bottom: 5.5rem;
+    left: -13rem;
+}
+
+#showcase .showcse-content {
+    padding-top: 0.5rem;
+    text-align: center;
+    margin: 3.5rem 0;
+}
+
+#showcase .showcse-content h1 {
+    font-size: 6.25rem;
+    font-family: 'Sacramento', cursive;
+    color: var(--primary-color);
+    font-weight: normal;
+}
+
+#showcase .showcse-content p {
+    font-size: 1.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: var(--primary-color);
+    margin-bottom: 5.5rem;
+}
+
+#showcase .m-2,
+#showcase .m-3 {
+    display: none;
+}
+
+#showcase .mountain {
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+
+/******** ABOUT SECTION ********/
+#about {
+    background-color: #F6D485;
+}
+
+#about .about-content {
+    text-align: center;
+    padding: 2rem 0 5.4rem;
+    position: relative;
+}
+
+#about .about-content img {
+    width: 220px;
+    margin: 2.8rem;
+}
+
+#about .about-content .about-me {
+    width: 72%;
+    margin: auto;
+    line-height: 2;
+}
+
+#about .about-content .about-me h1 {
+    font-size: 2rem;
+    margin-bottom: .75rem;
+    color: #7a4d1d;
+}
+
+#about .outer-core {
+    position: relative;
+    top: 15px;
+    width: 100%;
+}
+
+/******** SKILLS SECTION ********/
+#skills {
+    background: #d6d6d6;
+}
+
+#skills .skills-section ,
+#projects .projects-section,
+#experience .experience-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#skills .skills-section h1,
+#skills .skills-section h2,
+#projects .projects-section h1,
+#projects .projects-section h2,
+#experience .experience-section h1,
+#experience .experience-section h2{
+    color: var(--secondary-color);
+    font-weight: normal;
+}
+
+#skills .skills-section h2,
+#projects .projects-section h2,
+#experience .experience-section h2 {
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+
+#skills .skills-section>h1 , #projects .projects-section>h1, #experience .experience-section>h1 {
+    font-size: 3.5rem;
+    margin: 2rem 0 3rem;
+}
+
+#skills .skills-section .designing,
+#skills .skills-section .programming,
+#skills .skills-section .web-development,
+#projects .projects-section .toDoApp,
+#projects .projects-section .superCars,
+#projects .projects-section .luckGame,
+#experience .experience-section .tekion,
+#experience .experience-section .sapient {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr auto);
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+}
+
+#skills .skills-section .programming,
+#projects .projects-section .superCars,
+#experience .experience-section .sapient {
+    grid-template-columns: repeat(2, auto 1fr);
+}
+
+.designer-image,
+.programmer-image,
+.web-development-image,
+.toDoApp-image,
+.superCars-image,
+.luckGame-image {
+    width: 220px;
+    margin-top: .6rem;
+}
+
+.p-i-2 {
+    display: none;
+}
+
+.designer-image,
+.web-development-image,
+.toDoApp-image,
+.luckGame-image,
+.tekion-image {
+    margin-right: 3.125rem;
+}
+
+.programmer-image,
+.superCars-image {
+    margin-left: 3.125rem;
+}
+
+#skills .skills-section .skills-content {
+    margin: 3rem 0;
+}
+
+.inner-core {
+    position: relative;
+    top: 15px;
+}
+ #projects{
+    background-color:#01bfad63;
+ }
+ #experience{
+     background-color:  #d6d6d6;
+ }
+
+/******** FOOTER SECTION ********/
+#main-footer {
+    background-color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#main-footer .social-link a {
+    margin: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--secondary-color);
+    transition: all .3s ease-in-out;
+}
+
+#main-footer .social-link a:hover {
+    color: var(--dark-color);
+}
+
+#main-footer .copyright p {
+    color: var(--dark-color);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: .8rem;
+}
+
+@media (min-height: 1000px) {
+    #showcase {
+        height: 1000px;
+    }
+}
